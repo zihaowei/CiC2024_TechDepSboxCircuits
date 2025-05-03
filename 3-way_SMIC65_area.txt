@@ -1,0 +1,20 @@
+Start points:
+15 51 85 
+Target points:
+180 198 154 
+Area configure file: SMIC65.conf, depth configure file: default configure
+Maximum number: 8, maximum depth: 8
+
+success
+Total cost: 10.25
+Max depth: 6
+t1 = NANDN(x2, x1)	1
+t2 = XOR(x0, t1)	2  [y0]
+t3 = NAND(x2, t2)	3
+t4 = XOR(x1, t3)	4  [y1]
+t5 = NAND(x0, t4)	5
+t6 = XOR(x2, t5)	6  [y2]
+
+NAND: 2
+NANDN: 1
+XOR: 3
